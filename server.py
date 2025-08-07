@@ -7,7 +7,7 @@ def health():
     return {"status": "ok"}
 
 # Buraya LangGraph agent executor kodunu da eklemelisin
-from langchain_core.prebuilt import create_agent_executor
+from langgraph.prebuilt import create_agent_executor
 from langserve import add_routes
 from my_agent import agent, tools     # kendi agent tanımın
 
